@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <style>
+        .content { line-height: 1.6; }
+        .back { display: block; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <div class="date">{{ post.date }}</div>
+    <div class="category">{{ post.category }}</div>
+    <div class="content">
+        {{ post.content|safe }}
+    </div>
+    <a href="/" class="back">← 返回首页</a>
+</body>
+</html>
